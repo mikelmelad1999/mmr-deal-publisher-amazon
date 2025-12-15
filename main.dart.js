@@ -41298,21 +41298,27 @@ q=a.x
 if(q==null)q=""
 return a.b+"\n\n"+r+"\n\ud83d\udc47 \u0631\u0627\u0628\u0637 \u0627\u0644\u0645\u0646\u062a\u062c :\n\n"+q+"\n"},
 zA(a){return this.an7(a)},
-an7(a){var s=0,r=A.L(t.S),q,p=this,o,n,m,l,k,j
+an7(a){var s=0,r=A.L(t.S),q,p=this,o,n,m,l,k,j,i,h,g,f,e
 var $async$zA=A.M(function(b,c){if(b===1)return A.I(c,r)
-for(;;)switch(s){case 0:l=A.f2("https://api.telegram.org/bot8187699652:AAFL5YkyQt7C9TMDZt2UQ110A1EjgkLxjNw/sendPhoto",0,null)
-k=p.Ku(a)
-j=a.d
-if(j==null)j=""
-o=t.N
+for(;;)switch(s){case 0:g=A.f2("https://api.telegram.org/bot8187699652:AAFL5YkyQt7C9TMDZt2UQ110A1EjgkLxjNw/sendPhoto",0,null)
+f=p.Ku(a)
+e=["@Discount_Basket","684336172"]
+o=t.N,n=a.d,m=0,l=0
+case 3:if(!(l<2)){s=5
+break}k=e[l]
+s=6
+return A.O(A.aAP(g,A.al(["chat_id",k,"photo",n==null?"":n,"caption",f,"parse_mode","HTML"],o,o)),$async$zA)
+case 6:j=c
+i=B.cl.xO(A.apw(A.aoF(j.e)).eH(j.w),null)
+h=J.aI(i)
+if(J.d(h.h(i,"ok"),!0))m=J.bp(h.h(i,"result"),"message_id")
+else throw A.h(A.dQ("Telegram publish failed for "+k+": "+A.j(h.h(i,"description"))))
+case 4:++l
 s=3
-return A.O(A.aAP(l,A.al(["chat_id","@Discount_Basket","photo",j,"caption",k,"parse_mode","HTML"],o,o)),$async$zA)
-case 3:n=c
-m=B.cl.xO(A.apw(A.aoF(n.e)).eH(n.w),null)
-j=J.aI(m)
-if(J.d(j.h(m,"ok"),!0)){q=J.bp(j.h(m,"result"),"message_id")
+break
+case 5:q=m
 s=1
-break}else throw A.h(A.dQ("Telegram publish failed: "+A.j(j.h(m,"description"))))
+break
 case 1:return A.J(q,r)}})
 return A.K($async$zA,r)},
 y5(a,b){return this.ai9(a,b)},
